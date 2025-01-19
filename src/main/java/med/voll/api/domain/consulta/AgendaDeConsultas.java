@@ -31,7 +31,7 @@ public class AgendaDeConsultas {
             throw new ValidacaoException("Id do paciente informado não existe");
         }
 
-        if (dados.idMedico() != null && medicoRepository.existsById(dados.idMedico())) {
+        if (dados.idMedico() == null || !medicoRepository.existsById(dados.idMedico())) {
             throw new ValidacaoException("Id do medico informado não existe");
         }
 
