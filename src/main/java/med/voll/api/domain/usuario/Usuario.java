@@ -20,7 +20,6 @@ public class Usuario implements UserDetails {
     private String senha;
 
     public Usuario() {
-
     }
 
     public Usuario(Long id, String login, String senha) {
