@@ -38,12 +38,11 @@ public class Consulta {
     public Consulta() {
     }
 
-    public Consulta(Long id, Medico medico, Paciente paciente, LocalDateTime data, MotivoCancelamento motivoCancelamento) {
+    public Consulta(Long id, Medico medico, Paciente paciente, LocalDateTime data) {
         this.id = id;
         this.medico = medico;
         this.paciente = paciente;
         this.data = data;
-        this.motivoCancelamento = motivoCancelamento;
     }
 
     public Long getId() {
@@ -65,4 +64,5 @@ public class Consulta {
     public MotivoCancelamento getMotivoCancelamento() {
         return motivoCancelamento;
     }
+
 }
